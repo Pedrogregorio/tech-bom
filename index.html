@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Página de Links</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kanit:wght@400;700&display=swap');
+
+      * {
+        font-family: Kanit, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #002855;
+      }
+
+      main {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+      }
+
+      .item {
+        width: 100%;
+        height: 70px;
+        background-color: transparent;
+        border: white 2px solid;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 12px;
+        padding: 10px;
+        text-decoration: none;
+        color: #fff;
+        text-shadow:
+          0 0 7px #fff,
+          0 0 22px #5271ff;
+        font-weight: bold;
+        transition: 500ms;
+      }
+
+      .item:hover {
+        transition: 500ms;
+        background-color: white;
+        box-shadow: 10px 10px 10px black;
+        color: #002855;
+        text-shadow: 0 0 102px #002855;
+      }
+
+      .item div {
+        height: 50px;
+        width: 50px;
+        background-color: transparent;
+      }
+
+      .item div img {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      main div:first-child {
+        height: 400px;
+        width: 400px;
+        background-color: transparent;
+      }
+
+      main div:first-child img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <div><img src="./logo_tech_bom.png" alt="Logo tech bom"></div>
+
+      <a href="https://amzn.to/48iYU9p" class="item">
+        <span>
+          Mini Ar Condicionado
+        </span>
+
+        <div><img src="./arcondicionado.jpg" alt="Mini arcondicionado"></div>
+      </a>
+
+      <a href="https://shope.ee/7Ur5knkbWC?share_channel_code=1" class="item">
+        <span>
+          Kit Teclado E Mouse Bluetooth
+        </span>
+
+        <div><img src="./teclado.jpg" alt="Mini arcondicionado"></div>
+      </a>
+
+      <a href="https://shope.ee/8KQCk1XZoI?share_channel_code=1" class="item">
+        <span>
+          Campainha sem fio
+        </span>
+
+        <div><img src="./campainha.jpg" alt="Campainha sem fio"></div>
+      </a>
+    </main>
+  </body>
+</html>
